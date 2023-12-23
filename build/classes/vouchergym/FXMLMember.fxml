@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vouchergym.FXMLMemberController">
+   <children>
+      <Text layoutX="39.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <TableView fx:id="tbl_member" layoutX="39.0" layoutY="82.0" onMouseClicked="#onClickTableMember" prefHeight="200.0" prefWidth="520.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Text layoutX="39.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tbl_voucher" layoutX="39.0" layoutY="395.0" prefHeight="200.0" prefWidth="520.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Button fx:id="btn_delete_member" layoutX="88.0" layoutY="294.0" mnemonicParsing="false" onAction="#onClickHapusMember" text="Hapus" />
+      <Button fx:id="btn_edit_member" layoutX="39.0" layoutY="294.0" mnemonicParsing="false" onAction="#onClickEditMember" text="Edit" />
+      <Button fx:id="btn_delete_voucher" layoutX="39.0" layoutY="608.0" mnemonicParsing="false" onAction="#onClickHapusVoucher" text="Hapus" />
+      <Button fx:id="btn_tambah_member" layoutX="500.0" layoutY="39.0" mnemonicParsing="false" onAction="#onClickTambahMember" text="Tambah" />
+      <Button fx:id="btn_tambah_voucher" layoutX="500.0" layoutY="352.0" mnemonicParsing="false" onAction="#onClickTambahVoucher" text="Tambah" />
+      <TextField fx:id="tf_search" layoutX="310.0" layoutY="39.0" onAction="#onInputSearch" prefHeight="25.0" prefWidth="176.0" promptText="tekan enter untuk search" />
+      <Button fx:id="btn_gunakan" layoutX="99.0" layoutY="608.0" mnemonicParsing="false" onAction="#onClickGunakan" text="Gunakan" />
+   </children>
+</AnchorPane>

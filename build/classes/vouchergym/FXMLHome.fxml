@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vouchergym.FXMLHomeController">
+    <stylesheets>
+        <URL value="@fxmlhome.css" />
+    </stylesheets>
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Display Data">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onClickKelolaVoucher" text="Voucher" />
+                  <MenuItem mnemonicParsing="false" onAction="#onClickMember" text="Member" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Input Data">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onClickInputVoucher" text="Input Voucher" />
+                  <MenuItem mnemonicParsing="false" onAction="#onClickInputMember" text="Input Member" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Transaksi">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onClickBeliVoucher" text="Simulasi Beli Voucher" />
+                  <MenuItem mnemonicParsing="false" onAction="#onClickRedeemVoucher" text="Simulasi  Redeem Voucher" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Laporan">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#cetakReportVoucher" text="Laporan Voucher" />
+                  <MenuItem mnemonicParsing="false" onAction="#cetakReportMember" text="Laporan Member" />
+                  <MenuItem mnemonicParsing="false" onAction="#cetakReportPenjualanVoucher" text="Laporan Penjualan Voucher" />
+                  <MenuItem mnemonicParsing="false" onAction="#cetakReportPenggunaanVoucher" text="Laporan Penggunaan Voucher" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Pane fx:id="master_pane" layoutY="27.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

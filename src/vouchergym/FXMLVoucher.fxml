@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vouchergym.FXMLVoucherController">
+   <children>
+      <Text layoutX="37.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tbl_voucher" layoutX="36.0" layoutY="81.0" prefHeight="234.0" prefWidth="528.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn prefWidth="75.0" text="C1" />
+         </columns>
+      </TableView>
+      <TextField fx:id="tf_search" layoutX="306.0" layoutY="44.0" onAction="#onInputSearch" prefHeight="25.0" prefWidth="188.0" promptText="tekan enter untuk search" />
+      <Button fx:id="btn_tambah" layoutX="505.0" layoutY="44.0" mnemonicParsing="false" onAction="#onClickTambah" text="Tambah" />
+      <Button layoutX="36.0" layoutY="337.0" mnemonicParsing="false" onAction="#onClickEdit" text="Edit" />
+      <Button layoutX="86.0" layoutY="337.0" mnemonicParsing="false" onAction="#onClickHapus" text="Hapus" />
+   </children>
+</AnchorPane>
